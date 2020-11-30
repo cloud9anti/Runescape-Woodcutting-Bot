@@ -7,34 +7,6 @@ import win32api, win32con
 
 time.sleep(2)
 
-
-r'''
-l = None
-while l is None:
-    l=pyautogui.locateOnScreen(r'C:\Users\antic\pics\ball.png',grayscale=False)
-
-r= None 
-print("Looking for T")
-
-while r is None:
-    r=pyautogui.locateOnScreen(r'C:\Users\antic\pics\T.png',grayscale=False)
-print("Found the T")
-pyautogui.moveTo(r)
-pyautogui.click()
-
-r = None
-print("Looking for start")
-while r is None:
-    r=pyautogui.locateOnScreen(r'C:\Users\antic\pics\start.png',grayscale=False)
-print("Found the start")
-pyautogui.moveTo(r)
-pyautogui.click()
-
-for i in range(100):
-    pyautogui.typewrite('Spam ', interval=.0001)
-    if i%10 == 0 and i!=0:
-        pyautogui.typewrite('\n', interval=.0001)
-'''
 def drop():
     logs = None
     while logs is None:
